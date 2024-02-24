@@ -85,7 +85,7 @@ app.post('/new_content',(req,res)=>{
     const { title,img_url,content } = req.body;
     const currentDate = new Date();
     const year = currentDate.getFullYear();
-    const month = currentDate.getMonth() + 1; // Months are zero-based, so we add 1
+    const month = currentDate.getMonth() + 1;
     const day = currentDate.getDate();
     const date = day+'/'+month+'/'+year;
     res.render('dashboard', { date,title, img_url, content });
