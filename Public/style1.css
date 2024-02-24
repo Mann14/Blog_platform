@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+}
+.login{
+    background-image: url(images/bg3.jpg);
+    height: 100vh;
+    display: grid;
+    align-content: center;
+    background-size:cover;
+    justify-content: center;
+    gap: 20px;
+}
+form{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    /* margin-left: 100px; */
+}
+input{
+    height: 3rem;
+    width:25rem;
+    border: 1px solid black;
+    background-color: white;
+    font-size: 20px;
+}
+
+p{
+    color: rgb(154, 42, 51);
+    font-size: 50px;
+}
+.l1{
+    margin-left: 100px;
+}
+button{
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+.new_account a{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    position: relative;
+    left: 100px;
+    top: 50px;
+}
+@media screen and (max-width:572px) {
+    input{
+        width: 20rem;
+    }
+    .new_account a{
+        left: 50px;
+    }
+}
