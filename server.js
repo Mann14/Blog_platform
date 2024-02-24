@@ -4,7 +4,6 @@ const path = require('path');
 const port = 3000;
 const db = require('./config/mongoose');
 const Register = require('./model/register');
-const Content = require('./model/content')
 const app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
